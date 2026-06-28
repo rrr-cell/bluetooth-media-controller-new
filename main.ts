@@ -17,7 +17,7 @@ input.onGesture(Gesture.LogoUp, function () {
     basic.clearScreen()
 })
 input.onGesture(Gesture.TiltLeft, function () {
-    media.sendCode(media.keys(media._MediaKey.next))
+    media.sendCode(media.keys(media._MediaKey.previous))
     basic.showLeds(`
         # # . . #
         # . # . #
@@ -53,7 +53,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.clearScreen()
 })
 input.onGesture(Gesture.TiltRight, function () {
-    media.sendCode(media.keys(media._MediaKey.previous))
+    media.sendCode(media.keys(media._MediaKey.next))
     basic.showLeds(`
         # . . # #
         # . # . #
