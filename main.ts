@@ -1,8 +1,12 @@
 bluetooth.onBluetoothConnected(function () {
     basic.showIcon(IconNames.Yes)
+    basic.pause(1000)
+    basic.clearScreen()
 })
 bluetooth.onBluetoothDisconnected(function () {
     basic.showIcon(IconNames.No)
+    basic.pause(1000)
+    basic.clearScreen()
 })
 input.onGesture(Gesture.LogoUp, function () {
     media.sendCode(media.keys(media._MediaKey.vol_up))
